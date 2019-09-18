@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1 style="text-align:center">Scuba Diving Incidence Report</h1>
+    <form method="POST" action="https://postman-echo.com/post">
+        <table>
+            <tr>
+                <th style="text-align:left;font-size:23px">Victim's General Information</th>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" id="diver_fname" name="diver_fname" /></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" id="diver_lname" name="diver_lname" /></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <section><input type="radio" value="male" id="diver_gender_1" name="diver_gender" />Male</section>
+                    <section><input type="radio" value="Female" id="diver_gender_2" name="diver_gender" />Female</section>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="diver_email" name="diver_email" /></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="number" id="diver_phone_number" name="diver_phone_number" /></td>
+            </tr>
+            <tr>
+                <td>Time of Incident</td>
+                <td><input type="datetime" id="incident_time" name="incident_time"></td>
+            </tr>
+            <tr>
+                <td>Date of Incident</td>
+                <td><input type="date" id="incident_date" name="incident_date"></td>
+            </tr>
+            <tr>
+                <td>Location of Incident</td>
+                <td>
+                    <textarea id="incident_location" name="incident_location">
+                </textarea>
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left;font-size:23px">Equipment used by the Diving Accident Victim</th>
+            </tr>
+            <tr>
+                <td>Breathing Loop</td>
+                <td>
+                    <section><input type="radio" value="Open Circuit" id="breathing_loop_1" name="breathing_loop" />Open Circuit</section>
+                    <section><input type="radio" value="Semi Closed/Closed Circuit" id="breathing_loop_2" name="breathing_loop" />Semi Closed/Closed Circuit</section>
+                    <section><input type="radio" value="Surface Supplied" id="breathing_loop_3" name="breathing_loop" />Surface Supplied</section>
+                    <section><input type="radio" value="Snorkel" id="breathing_loop_4" name="breathing_loop" />Snorkel</section>
+                </td>
+            </tr>
+            <tr>
+                <td>Diver Dress</td>
+                <td style="padding-top:20px;">
+                    <section><input type="radio" value="None/Dive Skin" id="diver_dress_1" name="diver_dress" />None / Dive Skin</section>
+                    <section><input type="radio" value="Wet Suit" id="diver_dress_2" name="diver_dress" />Wet Suit</section>
+                    <section><input type="radio" value="Dry Suit" id="diver_dress_3" name="diver_dress" />Dry Suit</section>
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left;font-size:23px">Dive Information – Incident Dive</th>
+            </tr>
+            <tr>
+                <td>Name of on-site diving supervisor/Lead diver</td>
+                <td><input type="text" id="lead_diver_name" name="lead_diver_name" /></td>
+            </tr>
+            <tr>
+                <td>Name of dive buddy</td>
+                <td><input type="text" id="dive_buddy_name" name="dive_buddy_name" /></td>
+            </tr>
+            <tr>
+                <td>Dive buddy affiliation</td>
+                <td><input type="text" id="dive_buddy_affiliation" name="dive_buddy_affiliation" /></td>
+            </tr>
+            <tr>
+                <td>Surface Conditions</td>
+                <td><input type="text" id="surface_conditions" name="surface_conditions" /></td>
+            </tr>
+            <tr>
+                <td>Air Temperature(&deg;F)</td>
+                <td><input type="number" id="air_temperature" name="air_temperature" /></td>
+            </tr>
+            <tr>
+                <td>Water Temperature(&deg;F)</td>
+                <td><input type="number" id="water_temperature" name="water_temperature" /></td>
+            </tr>
+            <tr>
+                <td>Was this dive typical of the diver’s normal type of diving?</td>
+                <td>
+                    <input type="radio" value="Yes" id="divers_normal_dive_1" name="divers_normal_dive" />Yes
+                    <input type="radio" value="No" id="divers_normal_dive_2" name="divers_normal_dive" />No
+                </td>
+            </tr>
+            <tr>
+                <td>If NO, explain:</td>
+                <td>
+                    <textarea id="explain" name="explain"> </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Suspected injuries or Illnesses</td>
+                <td>
+                    <select id="diver_injuries" name="diver_injuries">
+                        <option value="" selected disabled>Select Injuries</option>
+                        <option value="AGE">AGE</option>
+                        <option value="DCS">DCS</option>
+                        <option value="Pulmonary Barotrauma">Pulmonary Barotrauma</option>
+                        <option value="Other Barotrauma">Other Barotrauma</option>
+                        <option value="None">None</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Factors Involved</td>
+                <td style="padding-top:20px;">
+                    <section><input type="checkbox" value="Rough water" id="factor_1" name="factor_1" />Rough water</section>
+                    <section><input type="checkbox" value="Cold water" id="factor_2" name="factor_2" />Cold water</section>
+                    <section><input type="checkbox" value="Low surface" id="factor_3" name="factor_3" />Low surface</section>
+                    <section><input type="checkbox" value="Low underwater" id="factor_4" name="factor_4" />Low underwater</section>
+                    <section><input type="checkbox" value="Diver too heavy in water" id="factor_5" name="factor_5" />Diver too heavy in water</section>
+                    <section><input type="checkbox" value="Incorrect Gas Mixture" id="factor_6" name="factor_6" />Incorrect Gas Mixture</section>
+                    <section><input type="checkbox" value="Carelessness" id="factor_7" name="factor_7" />Carelessness</section>
+                    <section><input type="checkbox" value="Disregard of rules" id="factor_8" name="factor_8" />Disregard of rules</section>
+                    <section><input type="checkbox" value="Inadequate pre-dive check" id="factor_9" name="factor_9" />Inadequate pre-dive check</section>
+                    <section><input type="checkbox" value="Inadequate training" id="factor_10" name="factor_10" />Inadequate training</section>
+                    <section><input type="checkbox" value="Breathlessness" id="factor_11" name="factor_11" />Breathlessness</section>
+                </td>
+            </tr>
+            <tr>
+                <td>Emergency Services Involved</td>
+                <td style="padding-top:20px;">
+                    <section><input type="checkbox" value="Coastguard" id="emergency_service_1" name="emergency_service_1" />Coastguard</section>
+                    <section><input type="checkbox" value="Lifeboat" id="emergency_service_2" name="emergency_service_2" />Lifeboat</section>
+                    <section><input type="checkbox" value="Helicopter" id="emergency_service_3" name="emergency_service_3" />Helicopter</section>
+                    <section><input type="checkbox" value="Ambulance" id="emergency_service_4" name="emergency_service_4" />Ambulance</section>
+                    <section><input type="checkbox" value="Hospital" id="emergency_service_5" name="emergency_service_5" />Hospital</section>
+                    <section><input type="checkbox" value="Police" id="emergency_service_6" name="emergency_service_6" />Police</section>
+                    <section><input type="checkbox" value="Fire Brigade" id="emergency_service_7" name="emergency_service_7" />Fire Brigade</section>
+                    <section><input type="checkbox" value="Recompression" id="emergency_service_8" name="emergency_service_8" />Recompression</section>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

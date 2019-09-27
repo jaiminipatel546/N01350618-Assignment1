@@ -94,22 +94,22 @@ namespace N01350618_Assignment1 {
         protected global::System.Web.UI.WebControls.TextBox incident_location;
         
         /// <summary>
-        /// RadioButtonList1 control.
+        /// diver_breathing_loop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
+        protected global::System.Web.UI.WebControls.RadioButtonList diver_breathing_loop;
         
         /// <summary>
-        /// RadioButtonList2 control.
+        /// diver_dress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList2;
+        protected global::System.Web.UI.WebControls.RadioButtonList diver_dress;
         
         /// <summary>
         /// lead_diver_name control.
@@ -148,22 +148,22 @@ namespace N01350618_Assignment1 {
         protected global::System.Web.UI.WebControls.TextBox surface_conditions;
         
         /// <summary>
-        /// air_temperature control.
+        /// conditions_air_temperature control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox air_temperature;
+        protected global::System.Web.UI.WebControls.TextBox conditions_air_temperature;
         
         /// <summary>
-        /// water_temperature control.
+        /// conditions_water_temperature control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox water_temperature;
+        protected global::System.Web.UI.WebControls.TextBox conditions_water_temperature;
         
         /// <summary>
         /// divers_normal_dive control.
@@ -175,13 +175,13 @@ namespace N01350618_Assignment1 {
         protected global::System.Web.UI.WebControls.RadioButtonList divers_normal_dive;
         
         /// <summary>
-        /// explain control.
+        /// incident_details control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox explain;
+        protected global::System.Web.UI.WebControls.TextBox incident_details;
         
         /// <summary>
         /// diver_injuries control.
@@ -193,21 +193,30 @@ namespace N01350618_Assignment1 {
         protected global::System.Web.UI.WebControls.DropDownList diver_injuries;
         
         /// <summary>
-        /// factor control.
+        /// incident_factors control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList factor;
+        protected global::System.Web.UI.WebControls.CheckBoxList incident_factors;
         
         /// <summary>
-        /// emergency_service control.
+        /// incident_emergency_service control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList emergency_service;
+        protected global::System.Web.UI.WebControls.CheckBoxList incident_emergency_service;
+        
+        /// <summary>
+        /// confirmbox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl confirmbox;
     }
 }
